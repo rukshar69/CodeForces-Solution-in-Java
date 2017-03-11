@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+/**
+ * Created by Rukshar Alam on 3/11/2017.
+ */
+public class VasyaAndSocks {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        boolean f = true;
+        //socks are used as days go by
+        //every mth day a new sock is added
+        //halt when n =0
+        int day = 0;
+        while(f)
+        {
+            day++;
+            n--;
+            if(day%m == 0) n++;
+            if(n<1) break;
+        }
+
+        System.out.println(day);
+
+    }
+}
