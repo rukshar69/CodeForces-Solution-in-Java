@@ -1,4 +1,4 @@
-rt java.util.Scanner;
+import java.util.Scanner;
 
 /**
  * Created by Rukshar Alam on 3/18/2017.
